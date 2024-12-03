@@ -13,3 +13,23 @@ function signup(userName){
 }
 //Calling signup function
 signup("Nisha");
+
+//Creating new branch including login function
+function login(userName,password){
+    let array = ["Nikitha","Giana","Anayra","Radha","Nithin"];
+    for(let i=0;i<array.length;i++){
+        if(userName==array[i]){
+            if(password=="Emp@123"){
+                return console.log("Login Successful");
+            }
+            else {
+                return console.log("Wrong Password")
+            }
+        }
+    }
+    return console.log("User Not Found,Please Signup")
+}
+
+login("Nikitha","Emp@123")
+login("Nikitha","Emp0123")
+login("Nisha","Emp@123")
